@@ -38,17 +38,17 @@ function App() {
             <Route
               path="/entrepreneurhome"
               element={
-                <RequireAuth>
+                 
                   <UserHome />
-                </RequireAuth>
+                 
               }
             />
             <Route
               path="/investorhome"
               element={
-                <RequireAuth>
+                 
                   <InvestorHome />
-                </RequireAuth>
+                 
               }
             />
             <Route path="/entrepreneursignup" element={<SignUp />} />
@@ -60,17 +60,17 @@ function App() {
             <Route
               path="/chat"
               element={
-                <RequireAuth>
+                 
                   <Chat />
-                </RequireAuth>
+                 
               }
             />
             <Route
               path="/events"
               element={
-                <RequireAuth>
+                 
                   <Events />
-                </RequireAuth>
+                 
               }
             />
             <Route
@@ -82,28 +82,28 @@ function App() {
             <Route
               path="/allmeetups"
               element={
-                <RequireAuth>
+                 
                   <AllMeetups />
-                </RequireAuth>
+                 
               }
             />
             <Route
               path="/new-meetup"
               element={
-                <RequireAuth>
+                 
                   <NewMeetups />
-                </RequireAuth>
+                 
               }
             />
             <Route path="/about" element={<About />} />
-            <Route path="/vclist" element={<RequireAuth><InvestorList /></RequireAuth>} />
-            <Route path="/entlist" element={<RequireAuth><EntrepreneurList /></RequireAuth>} />
+            <Route path="/vclist" element={ <InvestorList /> } />
+            <Route path="/entlist" element={ <EntrepreneurList /> } />
             <Route
               path="/favorites"
               element={
-                <RequireAuth>
+                 
                   <FavouriteMeetups />
-                </RequireAuth>
+                 
               }
             />
             <Route path="/who_r_u" element={<Navigator />}></Route>
