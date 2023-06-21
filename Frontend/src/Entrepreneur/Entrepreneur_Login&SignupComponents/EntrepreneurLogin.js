@@ -36,6 +36,7 @@ function EntrepreneurLogIn() {
     e.preventDefault();
     let response, currentUser;
     let data;
+    console.log("test!!!!!")
     try {
       setIsloading(true)
       response = await fetch("http://65.1.106.123:8080/entrepreneur/login", {
