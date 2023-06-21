@@ -26,7 +26,7 @@ function SignUp() {
     console.log(formData);
     let response, responseData;
     try {
-      response = await fetch("http://3.110.208.9:8080/entrepreneur/signup", {
+      response = await fetch("http://3.110.48.53:8080/entrepreneur/signup", {
         method: "PUT",
         body: formData,
       });

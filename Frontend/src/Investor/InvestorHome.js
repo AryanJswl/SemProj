@@ -19,7 +19,7 @@ function InvestorHome() {
     const fetchdata = async () => {
       let response, data;
       try {
-        response = await fetch("http://3.110.208.9:8080/investor/getlist", {
+        response = await fetch("http://3.110.48.53:8080/investor/getlist", {
           method: "POST",
           body: JSON.stringify({
             id: authctx.currentUser.currentUser.id,
@@ -78,7 +78,7 @@ function InvestorHome() {
           )}
         </div>
         <br></br>
-        {/* <img src = {"http://3.110.208.9:8080/" + `${authctx.currentUser.currentUser.imgurl}`} /> */}
+        {/* <img src = {"http://3.110.48.53:8080/" + `${authctx.currentUser.currentUser.imgurl}`} /> */}
       </div>
     </>
   );

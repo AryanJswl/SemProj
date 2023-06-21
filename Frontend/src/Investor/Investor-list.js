@@ -8,7 +8,7 @@ function InvestorList() {
   useEffect(() => {
     const fetchUsers = async() =>{
       try {
-        const responseData = await fetch("http://3.110.208.9:8080/investor/list",{
+        const responseData = await fetch("http://3.110.48.53:8080/investor/list",{
           method:"GET",
           body:null,
           headers:{}
