@@ -16,7 +16,7 @@ const navigate=useNavigate();
     formData.append("password", data.password);
     formData.append("image", data.imgUrl);
     console.log(formData);
-    fetch("http://65.1.106.123:8080/investor/signup", {
+    fetch("http://172.31.13.129:8080/investor/signup", {
       method: "PUT",
       body: formData
     })

@@ -36,7 +36,7 @@ function UserHome() {
    <div className={classes.container}>
       <div className={classes.video}>
       <video  controls autoPlay >
-        <source src={"http://65.1.106.123:8080/" + `${authctx.currentUser.currentUser.pitchurl}`} type="video/mp4" />
+        <source src={"http://172.31.13.129:8080/" + `${authctx.currentUser.currentUser.pitchurl}`} type="video/mp4" />
         </video>
       </div>
 

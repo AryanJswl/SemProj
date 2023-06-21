@@ -39,7 +39,7 @@ function EntrepreneurLogIn() {
     console.log("Hello test!!!!!")
     try {
       setIsloading(true)
-      response = await fetch("http://65.1.106.123:8080/entrepreneur/login", {
+      response = await fetch("http://172.31.13.129:8080/entrepreneur/login", {
         method: "POST",
         body: JSON.stringify({
           email: formState.inputs.email.value,
@@ -90,7 +90,7 @@ function EntrepreneurLogIn() {
       <Navbar />
       <div classname={classes.head}>
         <div className={classes.image}>
-          <img src="http://65.1.106.123:8080/frontendimages/cover.jpg"
+          <img src="http://172.31.13.129:8080/frontendimages/cover.jpg"
           style={{width:"50vw", height:"85.5vh","padding-left":0}}/>
         </div>
       <ErrorModal error={error} onClear={clearError} />

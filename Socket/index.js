@@ -1,6 +1,6 @@
 const io = require("socket.io")(8900, {
     cors: {
-        origin: ["http://65.1.106.123:3000"]
+        origin: ["http://172.31.13.129:3000"]
     }
 });
 
